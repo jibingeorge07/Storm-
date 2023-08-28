@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop Cart</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Farro&display=swap" rel="stylesheet">
+	<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  
+<body>
+<section id="top">
+ <div class="container">
+  <div class="row">
+   <div class="top_1 clearfix">
+    <div class="col-sm-3">
+	 <div class="top_1i clearfix">
+	   <select class="form-control" id="subject" name="subject">
+		<option>Language</option>
+		<option>English</option>
+		<option>Spanish</option>
+		</select>
+		<select class="form-control" id="subject" name="subject">
+		<option>USD</option>
+		<option>EUR</option>
+		<option>GBP</option>
+		<option>RUPEE</option>
+		</select>
+	 </div>
+	</div>
+	<div class="col-sm-5">
+	 <div class="top_1i1 clearfix">
+	  <div class="col-sm-8 space_left">
+	   <div class="top_1i1l clearfix">
+	    <div class="input-group">
+		<input type="text" class="form-control" placeholder="Search">
+		<span class="input-group-btn">
+		<button class="btn btn-primary" type="button">
+			<i class="fa fa-search"></i></button>
+		</span>	 </div>
+	   </div>
+	  </div>
+	  <div class="col-sm-4 space_left">
+	   <div class="top_1i1r clearfix">
+	     <h5 class="mgt"><a class="button mgt" href="#"><i class="fa fa-phone-square"></i> 1234567890</a></h5>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-4">
+	 <div class="top_1i2 clearfix">
+	  <ul class="nav navbar-nav mgt">
+	              <li class="dropdown">
+                     <a href="#" class="dropdown-toggle tag_p" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+                     <ul class="dropdown-menu drop_1" style="padding: 15px;min-width: 250px;">
+                        <li>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <form class="form" role="form" method="post" action="#" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required="">
+                                    </div>
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required="">
+                                    </div>
+                                    <div class="checkbox">
+                                       <label>
+                                       <input type="checkbox"> Remember me                                       </label>
+                                    </div>
+                                    <div class="form-group">
+                                       <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                           <input class="btn btn-primary btn-block google" type="button" id="sign-in-google" value="Sign In with Google">
+                           <input class="btn btn-primary btn-block twitter" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+                        </li>
+                     </ul>
+                  </li>
+      
+                  
+				  <li class="dropdown">
+					<a class="button_1 mgt" href="#" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="fa fa-shopping-cart"></i>  Cart</a>
+					<ul class="dropdown-menu drop_cart" role="menu">
+						<li>
+						 <div class="drop_1i clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il clearfix"><h4 class="mgt col_black">2 ITEMS</h4></div>
+						  </div>
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il text-right clearfix"><h4 class="mgt"><a href="cart.html">VIEW CART</a></h4></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i1 clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1i1l clearfix"><h5 class="mgt bold"><a href="#">Nulla Quis</a> <br> <span class="normal col_black mt_10 inline_block">1x - $89.00</span></h5></div>
+						  </div>
+						  <div class="col-sm-4 col-xs-4">
+						   <div class="drop_1i1r clearfix"><a href="#"><img src="img/46.jpg" height="70" class="iw" alt="abc"></a></div>
+						  </div>
+						  <div class="col-sm-2 col-xs-2">
+						   <div class="drop_1i1l text-right clearfix"><h6 class="mgt bold"> <span><i class="fa fa-remove"></i></span></h6></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i1 clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1i1l clearfix"><h5 class="mgt bold"><a href="#">Eget Nulla</a> <br> <span class="normal col_black mt_10 inline_block">1x - $49.00</span></h5></div>
+						  </div>
+						  <div class="col-sm-4 col-xs-4">
+						   <div class="drop_1i1r clearfix"><a href="#"><img src="img/47.jpg" height="70" class="iw" alt="abc"></a></div>
+						  </div>
+						  <div class="col-sm-2 col-xs-2">
+						   <div class="drop_1i1l text-right clearfix"><h6 class="mgt bold"> <span><i class="fa fa-remove"></i></span></h6></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i2 clearfix">
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il clearfix"><h4 class="col_black mgt">TOTAL</h4></div>
+						  </div>
+						  <div class="col-sm-6 col-xs-6">
+						   <div class="drop_1il text-right clearfix"><h4 class="col_black mgt">$138.00</h4></div>
+						  </div>
+						 </div>
+						 <div class="drop_1i3 text-center clearfix">
+						  <div class="col-sm-12 col-xs-12">
+						   <h4 class="mgt"><a class="button d_block mgt" href="checkout.html">Checkout</a></h4>
+						  </div>
+						 </div>
+						</li>
+					  </ul>
+					</li>
+            </ul>
+	</div>
+   </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+<section id="header" class="cd-secondary-nav">
+	<nav class="navbar">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>				</button>
+			<a class="navbar-brand" href="index.html"><i class="fa fa-shopping-bag"></i> <span class="bold">MY</span> CART </a>			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				<li><a class="m_tag active_tab" href="index.html">Home</a></li>
+				<li class="dropdown">
+					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Product<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_o" role="menu">
+						<li><a href="product.html">Product</a></li>
+						<li><a class="border_none" href="product_detail.html">Product Detail</a></li>
+					  </ul>
+                    </li>
+				<li class="dropdown">
+					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Blog<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_o" role="menu">
+						<li><a href="blog.html">Blog</a></li>
+						<li><a class="border_none" href="detail.html">Blog Detail</a></li>
+					  </ul>
+                    </li>
+				<li class="dropdown">
+					  <a class="m_tag" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Pages<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_o" role="menu">
+						<li><a href="cart.html">Shopping Cart</a></li>
+						<li><a class="border_none" href="checkout.html">Checkout</a></li>
+					  </ul>
+                    </li>
+				<li><a class="m_tag" href="contact.html">Contact</a></li>
+				<li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle m_tag" data-toggle="dropdown">Dropdown<b class="caret"></b></a>
+				
+				<ul class="dropdown-menu dropdown-menu-large row">
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Glyphicons</li>
+							<li><a href="#">Available glyphs</a></li>
+							<li class="disabled"><a href="#">How to use</a></li>
+							<li><a href="#">Examples</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Dropdowns</li>
+							<li><a href="#">Example</a></li>
+							<li><a href="#">Aligninment options</a></li>
+							<li><a href="#">Headers</a></li>
+							<li><a href="#">Disabled menu items</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Button groups</li>
+							<li><a href="#">Basic example</a></li>
+							<li><a href="#">Button toolbar</a></li>
+							<li><a href="#">Sizing</a></li>
+							<li><a href="#">Nesting</a></li>
+							<li><a href="#">Vertical variation</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Button dropdowns</li>
+							<li><a href="#">Single button dropdowns</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul class="drop_3">
+							<li><a href="#"><img src="img/1.jpg" class="iw" alt="abc"></a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul class="drop_3">
+							<li><a href="#"><img src="img/2.jpg" class="iw" alt="abc"></a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			    <li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle m_tag" data-toggle="dropdown">More<b class="caret"></b></a>
+				
+				<ul class="dropdown-menu dropdown-menu-large row ">
+						<li class="col-sm-3">
+						<ul class="drop_3">
+							<li><a href="#"><img src="img/3.jpg" class="iw" alt="abc"></a></li>
+							<li class="dropdown-header">Glyphicons</li>
+							<li><a href="#">Available glyphs</a></li>
+							<li><a href="#">Aligninment options</a></li>
+							<li><a href="#">Headers</a></li>
+							<li><a href="#">Disabled menu items</a></li>
+						</ul>
+					</li>
+		                <li class="col-sm-3">
+						<ul class="drop_3">
+							<li><a href="#"><img src="img/4.jpg" class="iw" alt="abc"></a></li>
+							<li class="dropdown-header">Button groups</li>
+							<li><a href="#">Available glyphs</a></li>
+							<li><a href="#">Aligninment options</a></li>
+							<li><a href="#">Headers</a></li>
+							<li><a href="#">Disabled menu items</a></li>
+						</ul>
+					</li>
+					    <li class="col-sm-3">
+						<ul class="drop_3">
+							<li><a href="#"><img src="img/5.jpg" class="iw" alt="abc"></a></li>
+							<li class="dropdown-header">Button Dropdowns</li>
+							<li><a href="#">Available glyphs</a></li>
+							<li><a href="#">Aligninment options</a></li>
+							<li><a href="#">Headers</a></li>
+							<li><a href="#">Disabled menu items</a></li>
+						</ul>
+					</li>
+					    <li class="col-sm-3">
+						<ul class="drop_3">
+							<li><a href="#"><img src="img/6.jpg" class="iw" alt="abc"></a></li>
+							<li class="dropdown-header">Dropdowns</li>
+							<li><a href="#">Available glyphs</a></li>
+							<li><a href="#">Aligninment options</a></li>
+							<li><a href="#">Headers</a></li>
+							<li><a href="#">Disabled menu items</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+</section>
+	
+<section id="center" class="clearfix center_home">
+	 <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+	  <!-- Overlay -->
+	  <div class="overlay"></div>
+	
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+		<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+		<li data-target="#bs-carousel" data-slide-to="1" class=""></li>
+		<li data-target="#bs-carousel" data-slide-to="2" class=""></li>
+	  </ol>
+	  
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+		<div class="item slides active">
+		  <div class="slide-1"></div>
+		  <div class="hero">
+			<hgroup>
+				<h1> <span class="bold">Lorem ipsum</span> dolor </h1>        
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris.  Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</hgroup>
+			<h5><a class="button_1" href="#">SHOP NOW</a></h5>
+		  </div>
+		</div>
+		<div class="item slides">
+		  <div class="slide-2"></div>
+		  <div class="hero">
+			<hgroup>
+				<h1><span class="bold">Increase</span>  Market</h1>        
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris.  Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</hgroup>
+			<h5><a class="button_1" href="#">SHOP NOW</a></h5>
+		  </div>
+		</div>
+		<div class="item slides">
+		  <div class="slide-3"></div>
+		  <div class="hero">
+			<hgroup>
+				<h1><span class="bold">tell</span> about you</h1>        
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris.  Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</hgroup>
+			<h5><a class="button_1" href="#">SHOP NOW</a></h5>
+		  </div>
+		</div>
+	  </div> 
+	</div>
+ </section>
+ 
+<section id="collection">
+ <div class="container">
+  <div class="row">
+   <div class="collect_1 clearfix">
+    <div class="col-sm-6">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/10.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-6">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/11.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+   </div>
+   <div class="collect_1 clearfix">
+    <div class="col-sm-3">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/12.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/13.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/14.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/15.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+   </div>
+   <div class="collect_1 clearfix">
+    <div class="col-sm-6">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/16.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-6">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/17.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Furniture</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="arrival">
+ <div class="container">
+  <div class="row">
+   <div class="arriv_1 text-center clearfix">
+    <div class="col-sm-12">
+	 <h2 class="mgt">NEW ARRIVALS</h2>
+	 <p>Naminos elementum disus tincidunts de cosmopolis an loremous</p>
+	</div>
+   </div>
+   <div class="arriv_2 clearfix">
+    <div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/18.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	   <h4 class="bold mgt"><a class="col_1" href="product_detail.html">PRODUCT</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/19.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	   <h4 class="bold mgt"><a class="col_1" href="product_detail.html">OTHER</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/20.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	   <h4 class="bold mgt"><a class="col_1" href="product_detail.html">NEW</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/21.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	    <h4 class="bold mgt"><a class="col_1" href="product_detail.html">TRENDING</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+   </div>
+   <div class="arriv_2 clearfix">
+    <div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/22.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	   <h4 class="bold mgt"><a class="col_1" href="product_detail.html">PRODUCT</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/23.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	    <h4 class="bold mgt"><a class="col_1" href="product_detail.html">OTHER</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/24.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	   <h4 class="bold mgt"><a class="col_1" href="product_detail.html">NEW</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/25.jpg" alt="abc" class="iw"></a>	  </div>
+	  <div class="arriv_2m2 clearfix">
+	   <h5 class="text-center mgt">SALE</h5>
+	  </div>
+	  <div class="arriv_2m3 clearfix">
+	   <h4 class="bold mgt"><a class="col_1" href="product_detail.html">TRENDING</a></h4>
+	   <p>Naminos elementum disus tincidunts cosmo de cosmopolis</p>
+	   <span class="span_1">
+	    <i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>	   </span>
+	   <h5>
+	   <span class="span_2">$45.00</span>
+	   <span class="span_3 col_2"> $34.00</span> 
+	   <span class="span_4 pull-right col_2">Limited Offer!</span>	   </h5>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="collection_o">
+ <div class="container">
+  <div class="row">
+   <div class="collect_1 clearfix">
+    <div class="col-sm-6">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/26.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Product</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-6">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/27.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Product</h2>
+				<p>Ming sits in the corner the whole day. She's into crochet.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+   </div>
+   
+   <div class="collect_1 clearfix">
+	<div class="col-sm-12">
+	 <div class="collect_1l clearfix">
+	   <div class="grid">
+		<figure class="effect-ming">
+			<img src="img/28.jpg" alt="img08"/>
+			<figcaption>
+				<h2>Product</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+			</figcaption>			
+		</figure>
+	  </div>
+	 </div>
+	</div>
+   </div>
+   
+   <div class="collect_1 clearfix">
+	<div class="col-sm-12">
+	 <p>FURNITICA Responsive Furniture Shopify Template - Pellentesque at libero vehicula, consectetur justo lorem luctus libero. Aenean eu viverra mauris, eu pulvinar tellus. Divamus ut massa a libero commodo imperdiet in danos amet arcu. Duis vestibulum lorem ac tortor commodo blandit. Nulla ante leo, sollicitudin at pulvinar multrices pulvinar a dodiom. Sed lacus enim gravida an cosmopolis luctus mattis aliquet lacus imperdiet danos mulputate finibus an lectus.</p>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="arrival_o">
+ <div class="container">
+  <div class="row">
+   <div class="arriv_1 text-center clearfix">
+    <div class="col-sm-12">
+	 <h2 class="mgt">SHOP CART ON INSTAGRAM</h2>
+	 <p>Naminos elementum disus tincidunts de cosmopolis an loremous</p>
+	</div>
+   </div>
+   <div class="arriv_2 clearfix">
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/29.jpg" alt="abc" class="iw"></a>	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/30.jpg" alt="abc" class="iw"></a>	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/31.jpg" alt="abc" class="iw"></a>	  </div>
+	 </div>
+	</div>
+	<div class="col-sm-3 space_left">
+     <div class="arriv_2m clearfix">
+	  <div class="arriv_2m1 clearfix">
+	    <a href="#"><img src="img/32.jpg" alt="abc" class="iw"></a>	  </div>
+	 </div>
+	</div>
+   </div>
+   
+  </div>
+ </div>
+</section>
+
+<section id="footer">
+ <div class="container">
+  <div class="row">
+   <div class="footer_1 clearfix">
+    <div class="col-sm-3 col-xs-6">
+	 <div class="footer_1i clearfix">
+	  <h5 class="mgt col"><i class="fa fa-globe"></i> WORLDWIDE DELIVERY</h5>
+	 </div>
+	</div>
+	<div class="col-sm-3 col-xs-6">
+	 <div class="footer_1i clearfix">
+	  <h5 class="mgt col"><i class="fa fa-rupee"></i> LOW PRICE GUARANTEE</h5>
+	 </div>
+	</div>
+	<div class="col-sm-3 col-xs-6">
+	 <div class="footer_1i clearfix">
+	  <h5 class="mgt col"><i class="fa fa-star"></i> REWARDS PROGRAM</h5>
+	 </div>
+	</div>
+	<div class="col-sm-3 col-xs-6">
+	 <div class="footer_1i border_none clearfix">
+	  <h5 class="mgt col"><i class="fa fa-repeat"></i> 30-DAY FREE RETURNS</h5>
+	 </div>
+	</div>
+   </div>
+   <div class="footer_2 clearfix">
+    <div class="col-sm-2">
+	 <div class="footer_2i clearfix">
+	  <h5 class="col_1 mgt">SHOPS</h5>
+	  <ul>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Living</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Dining</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Bedroom</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Office</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Accents</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Decor</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Collection</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Lookbook</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Brands</a></li>
+	  </ul>
+	 </div>
+	</div>
+	<div class="col-sm-2">
+	 <div class="footer_2i clearfix">
+	  <h5 class="col_1 mgt">STORE INFO</h5>
+	  <ul>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">About Us</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Customer Service</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">New Collection</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Best Sellers</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Manufactures</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Privacy Policy</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Terms & Condition</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Blog</a></li>
+	  </ul>
+	 </div>
+	</div>
+	<div class="col-sm-2">
+	 <div class="footer_2i clearfix">
+	  <h5 class="col_1 mgt">CUSTOMER CARE</h5>
+	  <ul>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Search Terms</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Advanced Search</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Orders and Returns</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Contact Us</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">RSS</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Help & FAQs</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Consultant</a></li>
+	   <li class="col-xs-6 col-sm-12 space_left"><a href="#">Store Locations</a></li>
+	  </ul>
+	 </div>
+	</div>
+	<div class="col-sm-6">
+	 <div class="footer_2i1 clearfix">
+	  <h5 class="col_1 mgt">SIGN UP FOR OUR NEWSLETTER</h5>
+	  <p class="col">Enter your email bellow to receive a $30 coupon, special offters, excusive discounts and more!</p>
+	  <input type="text" class="form-control" placeholder="Enter your email address">
+	  <h5 class="mgt_b"><a class="button mgt" href="#"> SUBSCRIBE</a></h5>
+	  <h5 class="col_1">STAY CONNECTED</h5>
+	  <ul class="social-network social-circle mgt">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="footer_bottom">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+    <div class="footer_b_1 text-center clearfix">
+	 <p class="mgt col">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+	
+<script>
+$(document).ready(function(){
+	/*****Fixed Menu******/
+	var secondaryNav = $('.cd-secondary-nav'),
+	   secondaryNavTopPosition = secondaryNav.offset().top;
+	   navbar_height = document.querySelector('.navbar').offsetHeight;
+	   
+		$(window).on('scroll', function(){
+		    if($(window).scrollTop() > secondaryNavTopPosition + navbar_height ) {
+				secondaryNav.addClass('is-fixed');	
+				document.body.style.paddingTop = navbar_height + 'px';
+				
+			} else {
+				secondaryNav.removeClass('is-fixed');
+				document.body.style.paddingTop = '0'
+			}
+		});	
+		
+});
+</script>
+</body>
+ 
+</html>
